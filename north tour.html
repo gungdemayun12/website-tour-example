@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/north tour.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Top Navigation -->
+     <div class="top-nav">
+        <div class="top-nav-left">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="separator">|</span>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="mailto:gungdemayun64@gmail.com">gungdemayun64@gmail.com</a>
+        </div>
+        <div class="top-nav-right">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="tel:082147331906">082147331906</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navbar-link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Airport Transfer</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="close-btn">
+            <i class="fa-solid fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Airpot Transfer</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <section class="gallery">
+        <div class="gallery-container">
+            <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="gallery-images">
+                <img src="/assets/banyumala.jpg" alt="Image 1">
+                <img src="/assets/twin lake.jpg" alt="Image 2">
+                <img src="/assets/munduk waterfrall.jpg" alt="Image 3">
+                <img src="/assets/lovina 2.jpg" alt="Image 4">
+            </div>
+            <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+    <section class="tour-detail">
+        <h1>North Bali Tour</h1>
+        <p class="tour-description">  North Bali is a serene and tranquil region, offering a mix of natural beauty, cultural heritage, and unique attractions. 
+            From breathtaking waterfalls to peaceful lakes, the region is a haven for nature enthusiasts and those looking to 
+            explore Bali's less crowded gems.</p>
+    </section>
+
+    <!-- Tempat yang Bisa Dikunjungi -->
+    <section class="places">
+        <div class="place">
+            <div class="place-image">
+                <img src="/assets/banyumala.jpg" alt="banyumala Waterfall">
+            </div>
+            <div class="place-info">
+                <h3>Banyumala Waterfall</h3>
+                <p>  Banyumala Waterfall is a hidden gem located in the lush greenery of North Bali. Known for its twin cascades 
+                    and pristine natural pools, it is the perfect spot for those looking to immerse themselves in the serenity of nature. 
+                    The short trek to the waterfall takes you through a picturesque jungle path, offering stunning views along the way. 
+                    Visitors can swim in the cool, clear waters or simply relax and take in the tranquil atmosphere of this beautiful location.</p>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-image">
+                <img src="/assets/twin lake.jpg" alt="Twin Lake">
+            </div>
+            <div class="place-info">
+                <h3>Twin Lake</h3>
+                <p> Danau Kembar, or the Twin Lakes (Buyan and Tamblingan), are two scenic lakes surrounded by dense forest 
+                    and rolling hills. These lakes are part of a protected nature reserve and are known for their untouched beauty 
+                    and serene environment. Visitors can take a traditional canoe ride, explore the surrounding trekking paths, 
+                    or simply enjoy the breathtaking views. The area is also home to various bird species, making it a great 
+                    spot for birdwatching enthusiasts.</p>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-image">
+                <img src="/assets/munduk waterfrall.jpg" alt="Munduk Waterfall">
+            </div>
+            <div class="place-info">
+                <h3>Munduk Waterfall</h3>
+                <p> Munduk Waterfall is one of the most famous waterfalls in Bali, surrounded by coffee and clove plantations. 
+                    The cascading water is crystal clear, creating a refreshing natural pool at its base. The area is a popular 
+                    spot for nature lovers and photographers due to its scenic trails and lush greenery. As you trek through 
+                    the area, you can also explore smaller waterfalls and enjoy the cool, misty climate of North Bali.</p>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-image">
+                <img src="/assets/lovina 2.jpg" alt="Lovina Beach">
+            </div>
+            <div class="place-info">
+                <h3>Lovina Beach</h3>
+                <p> Lovina is a coastal area famous for its black sand beaches and tranquil ambiance. It is best known for its 
+                    dolphin-watching tours at sunrise, offering visitors the chance to see pods of dolphins swimming in their natural habitat. 
+                    The area also features vibrant coral reefs, making it a great spot for snorkeling and diving. Lovina's laid-back vibe, 
+                    combined with its cultural attractions and natural beauty, makes it a perfect destination for relaxation and exploration.
+                </p></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h1>Booking via TripAdvisor</h1>
+        <form id="bookingForm" action="https://www.tripadvisor.com/" target="_blank">
+            <!-- Nama -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email dan Phone -->
+            <div class="inline-fields">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+
+            <!-- Tour Date dan Number of Guests -->
+            <div class="inline-fields">
+                <div>
+                    <label for="date">Tour Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" placeholder="Enter number of guests" required>
+                </div>
+            </div>
+
+            <!-- Pilihan Packages -->
+            <label for="package">Select Package</label>
+            <select id="package" name="package" required>
+                <option value="" disabled selected>Select a package</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="vvip">VVIP</option>
+            </select>
+
+            <!-- Include (Hidden by Default) -->
+            <div id="packageDetails" class="hidden">
+                <h2>Package Includes:</h2>
+                <ul id="includeList"></ul>
+            </div>
+
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <section class="tour-detail" id="north-tour">
+        <h2>North Bali Tour</h2>
+        <p>Explore the hidden gems of North Bali, including temples, lakes, and waterfalls.</p>
+    
+        <section class="review-section">
+            <h3>Customer Reviews</h3>
+            <div id="reviews-container-north-tour"></div>
+            <hr>
+            <h3>Write a Review</h3>
+            <div class="rating-container" id="star-rating-north-tour">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+                <input type="hidden" id="rating-value-north-tour">
+            </div>
+            <form id="review-form-north-tour">
+                <label for="name">Name</label>
+                <input type="text" id="name-north-tour" placeholder="Your name" required>
+                <label for="comment">Comment</label>
+                <textarea id="comment-north-tour" placeholder="Your review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </section>
+
+    <script>
+
+const menuIcon = document.querySelector('.menu-icon');
+        const sidebar = document.querySelector('.sidebar');
+        const closeBtn = document.querySelector('.close-btn i');
+
+        menuIcon.addEventListener('click', () => {
+            sidebar.style.right = '0';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.style.right = '-100%';
+        });
+        let currentIndex = 0;
+
+function moveSlide(step) {
+    const images = document.querySelectorAll('.gallery-images img');
+    const totalImages = images.length;
+    currentIndex = (currentIndex + step + totalImages) % totalImages;
+    const newTransformValue = -currentIndex * 100 + '%';
+    document.querySelector('.gallery-images').style.transform = `translateX(${newTransformValue})`;
+} 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const packageSelect = document.getElementById('package');
+    const packageDetails = document.getElementById('packageDetails');
+    const includeList = document.getElementById('includeList');
+
+    const packageIncludes = {
+        low: [ 'Shared transport to destinations',
+            'Tour guide services',
+            'Mineral water during the trip',
+            'Standard parking fees'],
+        medium: ['Private transport with driver',
+            'Tour guide services',
+            'Lunch at a local restaurant',
+            'Snacks and refreshments',
+            'Tickets for entry to tourist sites',
+            'Standard parking fees'],
+        vvip: ['Private luxury transport with chauffeur',
+            'Personal tour guide (multi-lingual)',
+            'Lunch and dinner at premium restaurants',
+            'Beverages including non-alcoholic drinks',
+            'Tickets for all destinations (VIP access where applicable)',
+            'Professional photo and video documentation',
+            'Travel insurance coverage',
+            'Exclusive gifts for all guests',
+            'Parking, toll fees, and premium lounge access']
+    };
+
+    packageSelect.addEventListener('change', () => {
+        const selectedPackage = packageSelect.value;
+        includeList.innerHTML = '';
+
+        if (selectedPackage && packageIncludes[selectedPackage]) {
+            packageIncludes[selectedPackage].forEach(include => {
+                const li = document.createElement('li');
+                li.textContent = include;
+                includeList.appendChild(li);
+            });
+            packageDetails.classList.remove('hidden');
+        } else {
+            packageDetails.classList.add('hidden');
+        }
+    });
+});
+
+function handleStarRating(tourId) {
+        const stars = document.querySelectorAll(`#star-rating-${tourId} .star`);
+        const hiddenRatingInput = document.getElementById(`rating-value-${tourId}`);
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+                hiddenRatingInput.value = value;
+
+                // Mengupdate warna bintang
+                stars.forEach(s => {
+                    s.classList.remove('active');
+                });
+                for (let i = 0; i < value; i++) {
+                    stars[i].classList.add('active');
+                }
+            });
+        });
+    }
+
+    // Fungsi untuk menambahkan review
+    function handleReviewSubmit(tourId) {
+        const form = document.getElementById(`review-form-${tourId}`);
+        const nameInput = document.getElementById(`name-${tourId}`);
+        const commentInput = document.getElementById(`comment-${tourId}`);
+        const ratingValue = document.getElementById(`rating-value-${tourId}`);
+        const reviewsContainer = document.getElementById(`reviews-container-${tourId}`);
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Mencegah refresh halaman
+
+            const name = nameInput.value.trim();
+            const comment = commentInput.value.trim();
+            const rating = ratingValue.value;
+
+            if (name && comment && rating) {
+                // Menambahkan review baru
+                const newReview = document.createElement('div');
+                newReview.classList.add('review');
+                newReview.innerHTML = `
+                    <p><strong>${name}</strong> - ${createStarsHTML(rating)}</p>
+                    <p>${comment}</p>
+                    <button class="delete-review" onclick="deleteReview(this, '${tourId}')">Delete</button>
+                `;
+                reviewsContainer.appendChild(newReview);
+
+                // Simpan review ke localStorage
+                saveReviewToLocalStorage(tourId, name, comment, rating);
+
+                // Reset form
+                nameInput.value = '';
+                commentInput.value = '';
+                ratingValue.value = '';
+                stars.forEach(star => {
+                    star.classList.remove('active');
+                });
+            } else {
+                alert('Please fill in all fields!');
+            }
+        });
+    }
+
+    // Fungsi untuk membuat tampilan bintang
+    function createStarsHTML(rating) {
+        let starsHTML = '';
+        for (let i = 0; i < 5; i++) {
+            if (i < rating) {
+                starsHTML += '★';
+            } else {
+                starsHTML += '☆';
+            }
+        }
+        return starsHTML;
+    }
+
+    // Fungsi untuk menyimpan review ke localStorage
+    function saveReviewToLocalStorage(tourId, name, comment, rating) {
+        const reviews = getReviewsFromLocalStorage(tourId);
+        reviews.push({ name, comment, rating });
+        localStorage.setItem(tourId, JSON.stringify(reviews));
+    }
+
+    // Fungsi untuk mengambil review dari localStorage
+    function getReviewsFromLocalStorage(tourId) {
+        const reviews = localStorage.getItem(tourId);
+        return reviews ? JSON.parse(reviews) : [];
+    }
+
+    // Fungsi untuk menghapus review
+    function deleteReview(button, tourId) {
+        const review = button.parentElement;
+        review.remove();
+
+        // Hapus review dari localStorage
+        const reviews = getReviewsFromLocalStorage(tourId);
+        const reviewIndex = reviews.findIndex(r => r.name === review.querySelector('strong').innerText);
+        if (reviewIndex !== -1) {
+            reviews.splice(reviewIndex, 1);
+            localStorage.setItem(tourId, JSON.stringify(reviews));
+        }
+    }
+
+    // Fungsi untuk memuat review dari localStorage ke halaman
+    function loadReviews(tourId) {
+        const reviews = getReviewsFromLocalStorage(tourId);
+        const reviewsContainer = document.getElementById(`reviews-container-${tourId}`);
+
+        reviews.forEach(review => {
+            const newReview = document.createElement('div');
+            newReview.classList.add('review');
+            newReview.innerHTML = `
+                <p><strong>${review.name}</strong> - ${createStarsHTML(review.rating)}</p>
+                <p>${review.comment}</p>
+                <button class="delete-review" onclick="deleteReview(this, '${tourId}')">Delete</button>
+            `;
+            reviewsContainer.appendChild(newReview);
+        });
+    }
+
+    // Inisialisasi halaman review North Tour
+    document.addEventListener('DOMContentLoaded', () => {
+        const tourId = 'north-tour';
+        handleStarRating(tourId);
+        handleReviewSubmit(tourId);
+        loadReviews(tourId); // Memuat review dari localStorage
+    });
+
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e90ff;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+}
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+.separator {
+    margin: 0 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo img {
+    width: 100px;
+}
+.navbar-link ul {
+    display: flex;
+    list-style: none;
+}
+.navbar-link ul li {
+    margin: 0 1rem;
+}
+.navbar-link ul li a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: 600;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.menu-icon i {
+    font-size: 1.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background: #1e90ff;
+    color: white;
+    padding: 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin: 1.5rem 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.sidebar .close-btn {
+    text-align: right;
+}
+.sidebar .close-btn i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-link {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-link {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Menu dengan Gambar */
+.menu-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsif dengan grid */
+    gap: 20px;
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item a:hover .menu-image {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.menu-item span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .menu-item span {
+        font-size: 0.9rem;
+    }
+    .menu-image {
+        height: 180px;
+    }
+}
+
+/* Choose Your Tour Section */
+.choose-your-tour {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.choose-your-tour h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.tour-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsif dengan grid */
+    gap: 20px;
+    padding: 0 1rem;
+}
+
+.tour-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.tour-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tour-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tour-card:hover .tour-image {
+    transform: scale(1.1); /* Efek zoom pada gambar saat hover */
+}
+
+.tour-info {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.tour-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.tour-info p {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.tour-info button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tour-info button:hover {
+    background-color: #0077cc;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .choose-your-tour h2 {
+        font-size: 2rem;
+    }
+    .tour-info p {
+        font-size: 0.9rem;
+    }
+    .tour-info button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+.activities-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.activities-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; /* Set color to black */
+}
+
+/* Card Container */
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 300px;
+    text-align: left;
+    position: relative; /* Make sure image stays within card boundary */
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition for zoom effect */
+}
+
+/* Zoom effect on hover */
+.card:hover .card-img {
+    transform: scale(1.1); /* Zoom in image */
+}
+
+/* Card body styling */
+.card-body {
+    padding: 15px;
+}
+
+/* Card Title Styling */
+.card-body h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Set font color to black */
+    margin-bottom: 10px;
+}
+
+/* Card description */
+.card-body p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.card-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* View All Activities Button */
+.view-more-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.view-more-link:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .activities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
